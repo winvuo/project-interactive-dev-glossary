@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Interactive Glossary</h1>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <button id="search-button">search by term</button>
+        <br>
+        <input type="text" id="search-input" placeholder="type here">
+      </div>
+
+      <div class="class-dropdown">
+        <button id="search-button-class">search by class</button>
+        <div id="dropdown-content-class">
+          <a>class 1</a>
+          <a>class 2</a>
+          <a>class 3</a>
+          <a>class 4</a>
+          <a>class 5</a>
+          <a>class 6</a>
+          <a>class 7</a>
+          <a>class 8</a>
+        </div>
+      </div>
+
+      <div class="tag-search">
+        <button id="search-by-tag">search by tag</button>
+        <div id="checkboxes">
+          <input type="checkbox" class="tags" name="Browser"/>Browser
+          <input type="checkbox" class="tags" name="DOM"/>DOM
+          <input type="checkbox" class="tags" name="Events"/>Events
+          <br>
+          <input type="checkbox" class="tags" name="Front-End">Front-End
+          <input type="checkbox" class="tags" name="Functional">Functional
+          <input type="checkbox" class="tags" name="General">General
+          <br>
+          <input type="checkbox" class="tags" name="Git">Git
+          <input type="checkbox" class="tags" name="Github">Github
+          <input type="checkbox" class="tags" name="Higher-Order-Functions">Higher-Order-Functions
+          <br>
+          <input type="checkbox" class="tags" name="HTTP">HTTP
+          <input type="checkbox" class="tags" name="Internet">Internet
+          <input type="checkbox" class="tags" name="JavaScript">JavaScript
+          <br>
+          <input type="checkbox" class="tags" name="Node">Node
+          <input type="checkbox" class="tags" name="Programming">Programming
+          <input type="checkbox" class="tags" name="Protocol">Protocol
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="results-bar">search results</div>
+      <ul id="results-container"></ul>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+    <script src="glossary.js" type="module"></script>
+  </body>
+
+</html>
